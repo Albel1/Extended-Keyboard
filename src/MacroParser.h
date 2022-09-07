@@ -40,7 +40,7 @@ public:
         std::string groupName = "";
         std::shared_ptr<std::unordered_set<std::wstring>> excludes = nullptr;
         std::wstring line;
-        std::wifstream macroFile("/Users/laptop/build-test-Qt_6_2_3_for_macOS-Release/test.app/Contents/MacOS/macros.txt");
+        std::wifstream macroFile("macros.txt");
         int lineNumber = 0;
         macroFile.imbue(std::locale(std::locale(), new std::codecvt_utf8<wchar_t>));
         if (!macroFile.is_open()){
