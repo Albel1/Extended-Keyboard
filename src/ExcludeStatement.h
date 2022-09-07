@@ -13,8 +13,6 @@ public:
 
     }
     void excludeProgram(std::wstring programToExclude){
-        std::wcout << L"program to exclude: " << programToExclude << std::endl;
-        std::cout << programToExclude.size() << std::endl;
         if (excludedProgramNames->contains(programToExclude)){
             std::cout << "returning" << std::endl;
             return;
